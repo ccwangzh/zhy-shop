@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shopxx>
+    <logConfig operation="系统设置" urlPattern="/admin/setting/update.jhtml" />
+    <logConfig operation="添加管理员" urlPattern="/admin/admin/save.jhtml" />
+    <logConfig operation="编辑管理员" urlPattern="/admin/admin/update.jhtml" />
+    <logConfig operation="删除管理员" urlPattern="/admin/admin/delete.jhtml" />
+    <logConfig operation="添加会员" urlPattern="/admin/member/save.jhtml" />
+    <logConfig operation="编辑会员" urlPattern="/admin/member/update.jhtml" />
+    <logConfig operation="删除会员" urlPattern="/admin/member/delete.jhtml" />
+    <logConfig operation="添加文章" urlPattern="/admin/article/save.jhtml" />
+    <logConfig operation="编辑文章" urlPattern="/admin/article/update.jhtml" />
+    <logConfig operation="删除文章" urlPattern="/admin/article/delete.jhtml" />
+    <logConfig operation="添加商品" urlPattern="/admin/goods/save.jhtml" />
+    <logConfig operation="编辑商品" urlPattern="/admin/goods/update.jhtml" />
+    <logConfig operation="删除商品" urlPattern="/admin/goods/delete.jhtml" />
+    <logConfig operation="订单更新" urlPattern="/admin/order/update.jhtml" />
+    <logConfig operation="订单审核" urlPattern="/admin/order/review.jhtml" />
+    <logConfig operation="订单收款" urlPattern="/admin/order/payment.jhtml" />
+    <logConfig operation="订单退款" urlPattern="/admin/order/refunds.jhtml" />
+    <logConfig operation="订单发货" urlPattern="/admin/order/shipping.jhtml" />
+    <logConfig operation="订单退货" urlPattern="/admin/order/returns.jhtml" />
+    <logConfig operation="订单收货" urlPattern="/admin/order/receive.jhtml" />
+    <logConfig operation="订单完成" urlPattern="/admin/order/complete.jhtml" />
+    <logConfig operation="订单失败" urlPattern="/admin/order/fail.jhtml" />
+    <logConfig operation="订单删除" urlPattern="/admin/order/delete.jhtml" />
+
+</shopxx>

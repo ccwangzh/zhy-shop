@@ -1,0 +1,244 @@
+			.collection {
+				margin: 0;
+			}
+			
+			.card-content-inner {
+				padding: 0.35rem;
+			}
+			
+			.card-content-inner img {
+				width: 56px;
+			}
+			
+			.scwp {
+				width: 156px;
+				display: inline-block;
+				margin-left: 0.5rem;
+			}
+			
+			.scwp p {
+				margin: 0;
+			}
+			
+			.wpprice {
+				display: inline-block;
+				float: right;
+				margin-right: 0.5rem;
+				text-align: right;
+			}
+			
+			.wpprice p {
+				margin: 0;
+			}
+			
+			.btn-sc {
+				padding: 4px 12px;
+				border: 1px solid rgba(228, 228, 228, 1);
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				color: #999999;
+				position: absolute;
+				right: 0.5rem;
+			}
+			
+			.card {
+				margin: 0 0 0.5rem 0;
+			}
+			
+			.card-header {
+				color: #999999;
+				font-size: 0.7rem;
+				padding: 0.5rem;
+			}
+			
+			.nav-bar {
+				width: 100%;
+				list-style: none;
+				background: #fff;
+				padding: 0;
+				margin: 0 0 0.5rem 0;
+			}
+			
+			.nav-bar li {
+				width: 18%;
+				display: inline-block;
+				text-align: center;
+			}
+			
+			.nav-bar li a {
+				color: #666666;
+				font-size: 0.7rem;
+			}
+			
+			.cur {
+				border-bottom: 1px solid #00AAEE;
+			}
+			
+			.cur a {
+				color: #00AAEE!important;
+			}
+			
+			.orderNo {
+				color: #333;
+			}
+			
+			.staus {
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				font-size: 15px;
+				color: #00AAEE;
+			}
+			
+			.num {
+				margin-top: 0.9rem!important;
+			}
+			
+			.bon-bar {
+				width: 100%;
+				list-style: none;
+				;
+				padding: 0;
+				margin: 0.5rem 0 0.5rem 0!important;
+				height: 2rem;
+				text-align: right;
+				background: #fff!important;
+			}
+			
+			.bon-bar li {
+				display: inline-block;
+				padding-right: 0.5rem;
+				vertical-align: -webkit-baseline-middle;
+			}
+			
+			.bon-bar li a {
+				font-size: 0.6rem;
+				padding: 5px 20px 4px 20px;
+				border: 1px solid rgba(228, 228, 228, 1);
+				border-radius: 4px;
+				background: #fff;
+				color: #666666;
+			}
+			
+			.ddxq {
+				border: none!important;
+			}
+			
+			.ljfk {
+				color: #FFFFFF!important;
+				background: #00AAEE!important;
+			}
+			
+			.totmoney {
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				color: #FF0000;
+				font-size: 16px;
+			}
+			
+			.cpul {
+				background: #FFFFFF!important;
+				margin-bottom: 0;
+			}
+			
+			.cpul li {	
+				border-bottom: 1px solid #eee;
+			}
+			
+			.cpul li a{
+				display:block;
+				font-size: 0.6rem;
+				padding: 15px 10px;
+				overflow:hidden;
+				line-height:100%;
+			}
+			
+			.labletit {
+				font-size: 14px;
+				color: #999;
+			}
+			
+			.lablecon {
+				font-size: 14px;
+				color: #333;
+				padding-left: 0.3rem;
+			}
+			
+			.lableconte {
+				font-size: 18px;
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				color: #00AAEE;
+				float:right;
+			}
+			
+			.hebg {
+				height: 10rem;
+				text-align: center;
+				color: #fff;
+				 background: -webkit-linear-gradient(left bottom, #bc51fc , #05a8ee); /* Safari 5.1 - 6.0 */
+				 background: -o-linear-gradient(bottom right, #bc51fc, #05a8ee); /* Opera 11.1 - 12.0 */
+				 background: -moz-linear-gradient(bottom right, #bc51fc, #05a8ee); /* Firefox 3.6 - 15 */
+				 background: linear-gradient(to top right, #bc51fc , #05a8ee); /* 标准的语法 */
+			}
+			
+			.hebg p {
+				margin: 0.3rem 0;
+			}
+			
+			.hebg img {
+				margin-top: 1.5rem;
+				width: 4rem;
+			}
+			
+			.bar-sp {
+				background: #fff;
+			}
+			
+			.bar-sp ul {
+				margin: 0 auto 0.5rem;
+				padding:0.5rem 0;
+				overflow:hidden;
+			}
+			
+			.bar-sp ul li {
+				list-style-type: none;
+				float: left;
+				width:33.33%;
+				text-align:center;
+			}
+			
+			.bar-sp ul li a {
+				display: inline-block;
+				box-sizing: border-box;
+				text-align: center;
+				color: #666;
+				font-size: 13px;
+				font-weight: 600;
+				border-radius: 20px;
+			}
+			
+			.bar-sp ul li a .iconfont{
+				display:inline-block;
+				width:2.3rem;
+				height:2.3rem;
+				line-height:2.3rem;
+				border-radius:100%;
+				background:#fbf7ec;
+				font-size:1.1rem;
+			}
+			
+			.tuic {
+				background: #fff;
+				text-align: center;
+				margin-top: 0.5rem;
+			}
+			
+			.tuic a {
+				display: inline-block;
+				padding: 0.6rem;
+				font-size: 14px;
+				color: #666;
+			}

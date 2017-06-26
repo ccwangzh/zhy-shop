@@ -1,0 +1,57 @@
+			.collection {
+				margin: 0;
+			}
+			
+			.collection>p{
+				text-align:center;
+				font-size:0.8rem;
+			}
+			
+			.card-content-inner {
+				padding: 0.35rem;
+			}
+			
+			.card-content-inner img {
+				width: 56px;
+				vertical-align:top;
+			}
+			
+			.scwp {
+				width: 156px;
+				display: inline-block;
+				margin-left: 0.5rem;
+			}
+			
+			.scwp p {
+				margin: 0;
+			}
+			
+			.wpprice {
+				display: inline-block;
+				float: right;
+				margin-right: 0.5rem;
+			}
+			
+			.wpprice p {
+				margin: 0;
+			}
+			
+			.btn-sc {
+				padding: 4px 12px;
+				border: 1px solid rgba(228, 228, 228, 1);
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				color: #999999;
+				position: absolute;
+				right: 0.5rem;
+			}
+			
+			.card {
+				margin: 0 0 0.5rem 0;
+			}
+			
+			.card-header {
+				color: #999999;
+				font-size: 0.7rem;
+			}

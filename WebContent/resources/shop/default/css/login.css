@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2016 shopxx.net. All rights reserved.
+ * Support: http://www.shopxx.net
+ * License: http://www.shopxx.net/license
+ * 
+ * Style - Login
+ * Version: 5.0
+ */
+
+/* ---------- Login ---------- */
+
+.login{
+	color:#000;
+}
+
+.login .wrap {
+	margin-bottom: 30px;
+	margin-top:20px;
+}
+
+.login .main {
+	border: 1px solid #d7d7d7;
+	width: 460px;
+	height:413px;
+}
+
+.login .title {
+	height: 40px;
+	line-height: 40px;
+	color: #d8d8d8;
+	font-family: "Microsoft YaHei";
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.login .title strong {
+	padding: 0px 10px;
+	color: #000;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.login table {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.login th {
+	width: 100px;
+	padding: 12px;
+	font-weight: normal;
+	text-align: right;
+	height:30px;
+}
+
+.login .captcha {
+	width: 156px;
+	text-transform: uppercase;
+	ime-mode: disabled;
+}
+
+.login .captchaImage {
+	margin-left: 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	width:96px;
+	height:32px;
+	border:1px solid #c9c9c7;
+}
+
+.login .submit {
+	width: 270px;
+	height: 35px;
+	line-height: 35px;
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: none;
+	background-color: #00AAEE;
+}
+
+.login .submit:hover {
+	background-color: #0dbcff;
+}
+
+.login .loginPlugin {
+	border-top: 1px dotted #dddddd;
+}
+
+.login .loginPlugin li {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	margin-right: 14px;
+}
+
+.login .register dt {
+	line-height: 40px;
+	color: #349bc6;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+
+.login .register dd {
+	line-height: 30px;
+	color: #565656;
+}
+
+.login .register dd a {
+	color: #349bc6;
+}
+
+.login .loginFormRight{
+	float: right;
+    width: 460px;
+}
+
+.login .loginFormLeft img{
+    width: 568px;
+}
+
+.login .loginFormLeft{
+    margin-left:40px;
+}
+
+.login .verificateError{
+	position:relative;
+}
+
+.login .verificateError label{
+	position:absolute;
+	bottom:-19px;
+	left:-4px;
+}
+
+
+

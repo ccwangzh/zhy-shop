@@ -1,0 +1,9 @@
+.panel-overlay{background:rgba(0,0,0,);opacity:1;}
+.panel.panel-left{background:#2f333e;padding:8rem 0 2.5rem;box-sizing:border-box;}
+.panel.panel-left .celan{position:absolute;left:0;top:0;width:100%;}
+.leftNav{height:100%;overflow-y:scroll;}
+.leftNav ul li,.leftNav ul{list-style:none;margin:0;padding:0;}
+.leftNav ul li a{display:inline-block;box-sizing:border-box;padding-left:3.5rem;width:100%;height:2.7rem;line-height:2.7rem;font-size:0.8rem;color:#fff;}
+.logout{width:100%;height:2.5rem;line-height:2.5rem;text-align:center;font-size:0.8rem;color:#666;border-top:1px solid #ddd;position:absolute;bottom:0;left:0;}
+.panel-left .userMobile,.panel-left .register,.panel-left .register a{color:#fff;font-size:0.75rem;font-weight:bold;}
+.leftNav ul li a:HOVER{background: #00aaee}

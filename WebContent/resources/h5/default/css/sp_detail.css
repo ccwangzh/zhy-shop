@@ -1,0 +1,53 @@
+				body,.page, .page-group{background: #f2f2f2!important;font-family: Microsoft Yahei}
+			input[type="button"], input[type="submit"], input[type="reset"], input[type=text]{-webkit-appearance: none;/*去掉iPhone、iPad的默认按钮、输入框样式*/}
+			.toast{border-radius:0;background:#fff;color:#333;font-size:0.7rem;height:auto;line-height:1.5;padding:0.75rem;}
+			.toast .red{color:red;}
+			.content{padding-bottom:3.25rem;}
+			.swiper-container{padding:0!important;}
+			.swiper-slide img {width: 100%;}
+			.basicInfo{padding:0.75rem;position:relative;background:#fff;}
+			.basicInfo .price{padding:0;margin:0 0 0.75rem 0;line-height:100%;}
+			.basicInfo .price strong{font-size:1.1rem;color:red;}
+			.basicInfo .price em{font-size:1.1rem;color:#666;font-style:normal;font-size:0.75rem;}
+			.basicInfo .cpname{font-size:0.8rem;color:#333;font-weight:bold;margin:0 0 0.5rem 0;padding:0;line-height:1.2;}
+			.basicInfo .cpdesc{margin:0;padding:0;line-height:1.2;color:#00AAEE;font-size:12px;}
+			.basicInfo .btns{position:absolute;right:0.75rem;top:0.2rem;}
+			.basicInfo .btns a .font{font-size:1.2rem;display:inline-block;vertical-align:middle;color:#333;margin-left:0.3rem;}
+			.basicInfo .btns a .font.font-favorited{color:#0894ec!important;}
+			.cpul{list-style:none;padding:0;margin:0.75rem 0 0;background:#fff;}
+			
+			.cpul li{padding:0.5rem 0.75rem;font-size:0.7rem;color:#666;border-bottom:1px solid #ddd;}
+			.gwc{position:fixed;left:0;bottom:0;width:100%;background:#fff;border-top:1px solid #ddd;height:2.5rem;}
+			.gwc ul{list-style:none;padding:0;margin:0;overflow:hidden;padding-left:2.5rem;}
+			.gwc ul li{float:right;width:49%;line-height:2.5rem;text-align:center;}
+			.gwc ul li:first-of-type{position:absolute;left:0;top:0;width:2.5rem;}
+			.gwc ul li:first-of-type em{position:absolute;right:0rem;top:0.3rem;display:inline-block;border-radius:100%;background:red;color:#fff;line-height:100%;font-size:12px;padding:0.1rem;font-style:normal;}
+			.gwc .font-cart{font-size:1.5rem;}
+			.gwc ul li .button{border-radius:0;height:2.5rem;line-height:2.5rem;}
+			
+			.buyNumBox{width:100%;position:fixed;left:0;bottom:0;z-index:99999;transform:translate3d(0,200%,0);transition:all .3s ease-in-out;}
+			.buyNumBox input.hidden{display:none;}
+			.buyNumBox.modal-in{transform:translate3d(0,0,0);}
+			.buyNumBox>.button{height:2.25rem;line-height:2.25rem;border-radius:0;}
+			.buyNumBox .font-close{font-size:1.3rem;position:absolute;right:0.2rem;top:0rem;color:#666;}
+			.buyNumBox .info{padding:0.75rem;border-bottom:1px solid #ddd;background:#fff;}
+			.buyNumBox .info:after{display: block;clear: both;visibility: hidden;height: 0;overflow: hidden;content: ".";}
+			.buyNumBox .info img{float:left;width:5rem;height:auto;margin:-2rem 0.75rem 0 0;}
+			.buyNumBox .info ul{list-style:none;padding:0;float:left;margin:0;}
+			.buyNumBox .info ul li{line-height:100%;font-size:0.7rem;color:#666;margin-bottom:0.5rem;}
+			.buyNumBox .info ul .price{font-size:1.2rem;color:red;font-weight:bold;}
+			.buyNumBox .info ul li em{font-style:normal;color:#666;}
+			.buyNumBox .params{padding:0 0.75rem 0.75rem;background:#fff;}
+			.buyNumBox .params dl{margin:0;overflow:hidden;}
+			.buyNumBox .params dl dt,.buyNumBox .params .numInput label{font-size:0.7rem;color:#333;height:2rem;line-height:2rem;}
+			.buyNumBox .params dl dd{padding:0;margin:0 0.2rem 0 0;float:left;}
+			.buyNumBox .params dl dd a{border-radius:0.1rem;}
+			.buyNumBox .params .numInput .button{border-color:#ddd;color:#666;flex:1}
+			.buyNumBox .params .numInput input{border:1px solid #ddd;text-align:center;border-radius:0;padding:0;flex:3}
+			.co9{color: #999!important}
+			.blueee{background: #00aaee!important}
+			.redee{background: #fe4a15!important}
+			.biaoti{display:none;color: #fff;padding-right: 50px;}
+             .cofff{color: #fff;font-size: 20px}
+             .spdetai{background: none;border: none;}
+             .bar:after{content: none!important}

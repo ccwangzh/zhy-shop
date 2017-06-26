@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "iconfont";
+	src: url('../font/iconfont.eot'); /* IE9*/
+	src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/iconfont.woff') format('woff'),
+		url('../font/iconfont.ttf') format('truetype'),
+		url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.font {
+	font-family: "iconfont" !important;
+	font-size: 0.8rem;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right: 0.25rem;
+}
+
+.font-pendingPayment:before {
+	content: "\e607";//锟斤拷锟斤拷锟斤拷
+}
+.font-shipped:before {
+	content: "\e604";//锟斤拷锟斤拷锟斤拷
+}
+.font-allOrders:before {
+	content: "\e603";//全锟斤拷
+}
+
+.font-lists:before {
+	content: "\e661";//锟叫憋拷
+}
+
+.font-right:before {
+	content: "\e68e";//锟揭硷拷头
+}
+
+.font-up:before {
+	content: "\e68c";//锟斤拷
+}
+
+.font-down:before {
+	content: "\e62e";//锟斤拷
+}
+
+.font-functions:before {
+	content: "\e60d";//锟斤拷锟斤拷模锟斤拷
+}
+
+.font-favorite:before {
+	content: "\e64f";//锟秸诧拷
+}
+
+.font-favorited:before {
+	content: "\e614";//锟斤拷锟秸诧拷
+}
+
+.font-share:before {
+	content: "\e67e";//锟斤拷锟斤拷
+}
+
+.font-cart:before {
+	content: "\e617";//锟斤拷锟斤车
+}
+
+.font-add:before {
+	content: "\e615";//锟斤拷
+}
+
+.font-minus:before {
+	content: "\e616";//锟斤拷
+}
+
+.font-close:before {
+	content: "\e609";//锟斤拷
+}
+
+.font-delete:before {
+	content: "\e605";//删锟斤拷
+}
+.font-leftjiantou:before {
+	content: "\e645";//锟斤拷锟酵�
+}
+.font-bianji:before {
+	content: "\e60b";//锟洁辑
+}
+.font-wode:before {
+	content: "\e611";//锟揭碉拷
+}
+.font-shouye:before {
+	content: "\e65b";//锟揭碉拷
+}
+.font-rightdaohang:before {
+	content: "\e610";//锟揭碉拷
+}
+.font-upjt:before {
+	content: "\e612";//锟较硷拷头
+}
+
+.font-downjt:before {
+	content: "\e613";//锟铰硷拷头
+}
+
+.font-fr:before {
+	content: "\e6a9";//锟铰硷拷头
+}
+
+

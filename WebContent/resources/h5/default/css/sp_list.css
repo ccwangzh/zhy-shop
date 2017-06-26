@@ -1,0 +1,159 @@
+	body,.page, .page-group{background: #f2f2f2!important;font-family: Microsoft Yahei}
+	
+	.bar {
+ 
+    background: #00aaee;
+    opacity: 0.5;
+}
+.bar-nav~.content{top:2.2rem!important;}
+.celan{text-align: center;}
+	.row.lists{
+		padding:0 0.75rem;
+	}
+	
+	.row.lists .col-50{
+		margin-bottom:0.75rem;
+	}
+	
+	.row.lists .col-50 a{
+		display:inline-block;
+		background:#fff;
+		width:100%;
+		border:1px solid #ddd;
+	}
+	
+	.row.lists .list-title{
+		font-size: 0.7rem;
+	    font-weight: bold;
+	    color: #333;
+	    margin: 0.5rem 0;
+	    line-height: 1.2;
+	    padding: 0 0.4rem;
+	    height: 1.6rem;
+	    overflow: hidden;
+	}
+	
+	.row.lists .list-price{
+		margin: 0.5rem 0;
+	    padding: 0 0.4rem;
+	    font-size: 0.8rem;
+	    color: #ff0000;
+    }
+    .row.lists .list-price em{
+    	font-style: normal;
+	    font-size: 0.7rem;
+	    color: #333;
+    }
+
+	.row.lists .list-img{
+		width:100%;
+		height:7.5rem;
+		text-align:center;
+		overflow:hidden;
+	}
+	
+	.row.lists .list-img img{
+		width:auto;
+		max-width:100%;
+	}
+	
+	.nav-bar {
+		width: 100%;
+		list-style: none;
+		background: #fff;
+		padding: 0;
+		margin: 0 0 0.5rem 0;
+		border-bottom:1px solid #ddd;
+	}
+	
+	.nav-bar li {
+		width: 24%;
+		display: inline-block;
+		text-align: center;
+		padding:0.5rem 0;
+		line-height:100%;
+	}
+	
+	.nav-bar li a {
+	
+		font-size: 0.7rem;
+		box-sizing:border-box;
+		display:inline-block;
+		width:100%;
+		
+		line-height:100%;
+		font-size:0.8rem;
+		color:#999;
+	}
+	
+	.nav-bar li:last-of-type a{
+		border:none;
+	}
+	
+	.nav-bar li a.current{
+		color:#999
+	}
+	
+	.nav-bar li a.current .font{color:#00AAEE;}
+	
+	.bon-bar {
+		width: 100%;
+		list-style: none;
+		;
+		padding: 0;
+		margin: 0 0 0.5rem 0;
+	}
+	.bon-bar p{    margin: 0.9rem 0 0.5rem 0;}
+	
+dl.bon-bar{
+	position:relative;
+	padding:0 0.75rem 0 0.75rem;
+	overflow:hidden;
+}
+
+dl.bon-bar dt{
+	width:3rem;
+	position:absolute;
+	left:0.75rem;
+	top:0;
+	text-align:right;
+	font-size:0.7rem;
+	color:#333;
+	line-height:1.4rem;
+}
+dl.bon-bar dd{
+	float:left;
+	padding:0;
+	margin: 0 0.5rem 0.5rem 0;
+}
+
+dl.bon-bar dd a{
+	display:inline-block;
+	height:1.4rem;
+	padding:0 0.6rem;
+	line-height:1.4rem;
+	background:#fff;
+	border:1px solid #ddd;
+	border-radius:0.15rem;
+	font-size:0.65rem;
+	color:#666;
+}
+
+/*��ҳ*/
+.pagination{text-align:center;margin:1.5rem auto;}
+.pagination a,.pagination span{
+	display:inline-block;
+	border:1px solid #ddd;
+	font-size:0.7rem;
+	color:#666;
+	padding:0.2rem 0.5rem;
+	background:#fff;
+	margin-left:-6px;
+}
+
+.pagination span.currentPage{
+	color:#fff;
+	background:#00AAEE;
+}
+.bar .searchbar.title{background:none;padding:0.4rem 1.75rem;}
+.bar .button .font{font-size:1.2rem;margin-right:0;color:#fff;}

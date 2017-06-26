@@ -1,0 +1,56 @@
+	.collection {
+		margin: 0.5rem 0 0 0;
+	}
+	
+	.card-content-inner {
+		padding: 0.35rem;
+	}
+	
+	.card-content-inner img {
+		width: 56px;
+	}
+	
+	.success {
+		height: 4.7rem;
+		background: #FFF;
+		text-align: center;
+		padding-top: 1.5rem;
+		font-family: '微软雅黑 Bold', '微软雅黑';
+		font-weight: 700;
+		font-style: normal;
+		font-size: 16px;
+		color: #00A800;
+	}
+	
+	.success img {
+		vertical-align: sub;
+	}
+	
+	.success span {
+		margin-left: 0.4rem;
+	}
+	
+	.successinfo {
+		height: 8rem;
+		background: #fff;
+		margin-top: 0.75rem;
+	}
+	
+	.successinfo p {
+		margin: 0;
+		height: 1.25rem;
+		line-height: 1.25rem;
+		font-size: 14px;
+	}
+	
+	.orderinfo {
+		border-bottom: 1px solid rgba(228, 228, 228, 1);
+		padding: 0.75rem 0.5rem;
+	}
+	
+	.btnorder {
+		text-align: center;
+		height: 2.7rem;
+		line-height: 2.7rem;
+		border-bottom: 1px solid rgba(228, 228, 228, 1);
+	}

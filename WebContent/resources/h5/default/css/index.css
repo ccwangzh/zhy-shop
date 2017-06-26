@@ -1,0 +1,150 @@
+body,.page, .page-group{background: #f2f2f2!important;font-family: Microsoft Yahei}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #00aaee;
+}
+.toast{border-radius:0;color:#fff;font-size:0.7rem;height:auto;line-height:1.5;padding:0.75rem;}
+
+#swiper-container {
+	padding-bottom: 0.4rem;
+}
+
+.ygp {
+	width:100%;
+	height:2.4rem;
+	text-align:center;
+	line-height:2.4rem;
+	font-size:0.8rem;
+	color:#00AAEE;
+	font-weight:bold;
+	position:relative;
+}
+
+.ygp .font{
+	display:inline-block;
+	vertical-align:middle;
+	font-size:0.8rem;
+	line-height:100%;
+	margin-top:-0.2rem;
+}
+
+.ygp .line{
+	display:inline-block;
+	width:90%;
+	height:1px;
+	background:#e4e4e4;
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+
+.ygp .name{
+	background:#eee;
+	padding:0 1rem;
+	position:relative;
+	z-index:9;
+}
+
+
+
+.swiper-slide img {
+	width: 100%;
+}
+
+.celan {
+	text-align: center;
+}
+
+.celan p {
+	margin: 0;
+}
+
+.indexNav .col-50:nth-child(1){
+	background:#f2ffe6;
+}
+.indexNav .col-50:nth-child(2){
+	background:#fef1ed;
+}
+.indexNav .col-50:nth-child(3){
+	background:#eafefe;
+}
+.indexNav .col-50:nth-child(4){
+	background:#fffaf0;
+}
+.indexNav .col-50{
+	padding:0.8rem;
+}
+
+.indexNav .col-50 .button{
+	border-radius:0;
+	display:inline-block;
+	width:3.6rem;
+	height:1.2rem;
+	text-align:center;
+	line-height:1.1rem;
+	padding:0;
+	margin-top:1.4rem;
+	color:#333;
+	border:1px solid #ddd;
+	font-size:12px;
+	margin-left: 4.2rem
+	
+}
+
+.indexNav .col-50 .button .font{
+	font-size:12px;
+	margin:0;
+	vertical-align:middle;
+}
+
+.indexNav .col-50 p{
+	margin:0;
+	line-height:100%;
+	color:#606460;
+	font-size:0.8rem;
+	font-weight: bold;
+	
+}
+
+
+.goods .row{padding:0 0.7rem;}
+.goods .row .col-50{overflow:hidden;}
+
+.hotGoods{background:#fff;}
+
+.hotGoods .goods-img{
+	width:100%;
+	height:7.5rem;
+	text-align:center;
+}
+
+.hotGoods .goods-img img{
+	width:auto;
+	max-height:100%;
+}
+
+.hotGoods .goods-title{
+	font-size:0.7rem;
+	font-weight:bold;
+	color:#333;
+	margin:0.5rem 0;
+	line-height:1.2;
+	padding:0 0.4rem;
+	height:1.6rem;
+	overflow:hidden;
+}
+
+.hotGoods .goods-price{
+	margin:0.5rem 0;
+	padding:0 0.4rem;
+	font-size:0.8rem;
+	color:#ff0000;
+}
+
+.hotGoods .goods-price em{
+	font-style:normal;
+	font-size:0.7rem;
+	color:#333;
+}

@@ -1,0 +1,101 @@
+			.gto {
+				font-size: 12px;
+				padding: 4px 12px;
+				text-align: center;
+				border: 1px solid rgba(0, 170, 238, 1);
+				color: #00AAEE;
+				border-radius: 4px;
+				display: inline-block;
+				float: left;
+				margin-left: 15px;
+				margin-top: 15px;
+			}
+			
+			.points {
+				margin: 0;
+				background: #fff;
+			}
+			
+			.card {
+				margin: 0;
+				box-shadow: none;
+			}
+			
+			.blockfir {
+				background: #fff;
+				padding: 5px;
+				margin-bottom: 0.5rem;
+			}
+			
+			.inblock {
+				display: inline-block;
+			}
+			
+			.inblock p {
+				font-size: 12px;
+				color: #999999;
+				text-align: left;
+			}
+			
+			.inblock span {
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				font-size: 36px;
+				color: #00AAEE;
+				float: left;
+			}
+			
+			.blockfir img {
+				float: right;
+				margin-top: 0.8rem;
+			}
+			
+			.spxx {
+				color: #999999;
+				font-size: 0.7rem;
+				margin: 0 0.5rem;
+				border-bottom: 1px solid rgba(228, 228, 228, 1);
+				padding: 0.5rem 0;
+			}
+			
+			.card-content-inner {
+				padding: 0rem;
+				margin: 0.5rem;
+				border-bottom: 1px solid rgba(228, 228, 228, 1);
+				overflow:hidden;
+			}
+			
+			.blockone {
+				display: inline-block;
+				float:left;
+			}
+			
+			.blockone p {
+				margin: 0.5rem 0;
+			}
+			
+			.blocktwo {
+				display: inline-block;
+				float: right;
+			}
+			
+			.blocktwo p {
+				text-align: right;
+				margin: 0.5rem 0;
+			}
+			
+			.dqjf {
+				margin-top: -0.3rem!important;;
+			}
+			
+			.price {
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				font-size: 18px;
+				color: #00AAEE;
+			}
+			
+			.price span{display:none;}
+			.price span.show{display:inline-block;}

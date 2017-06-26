@@ -1,0 +1,186 @@
+						body,.page, .page-group{background: #f2f2f2!important;font-family: Microsoft Yahei}
+			.collection {
+				margin: 0;
+			}
+			
+			.card-content-inner {
+				padding: 0.35rem;
+			}
+			
+			.card-content-inner img {
+				width: 56px;
+				vertical-align:top;
+			}
+			
+			.scwp {
+				width: 156px;
+				display: inline-block;
+				margin-left: 0.5rem;
+			}
+			
+			.scwp p {
+				margin: 0;
+			}
+			
+			.wpprice {
+				display: inline-block;
+				float: right;
+				margin-right: 0.5rem;
+				text-align: right;
+			}
+			
+			.wpprice p {
+				margin: 0;
+			}
+			
+			.btn-sc {
+				padding: 4px 12px;
+				border: 1px solid rgba(228, 228, 228, 1);
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				color: #999999;
+				position: absolute;
+				right: 0.5rem;
+			}
+			
+			.card {
+				margin: 0 0 0.5rem 0;
+			}
+			
+			.card-header {
+				color: #999999;
+				font-size: 0.7rem;
+				padding: 0.5rem;
+			}
+			
+			.nav-bar {
+				width: 100%;
+				list-style: none;
+				background: #fff;
+				padding: 0;
+				margin: 0 0 0.5rem 0;
+			}
+			
+			.nav-bar li {
+				width: 18%;
+				display: inline-block;
+				text-align: center;
+			}
+			
+			.nav-bar li a {
+				color: #666666;
+				font-size: 0.7rem;
+			}
+			
+			.cur {
+				border-bottom: 1px solid #00AAEE;
+			}
+			
+			.cur a {
+				color: #00AAEE!important;
+			}
+			
+			.orderNo {
+				color: #333;
+			}
+			
+			.staus {
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				font-style: normal;
+				font-size: 15px;
+				color: #00AAEE;
+			}
+			
+			.num {
+				margin-top: 0.9rem!important;
+			}
+			
+			.bon-bar {
+				width: 100%;
+				list-style: none;
+				;
+				padding: 0;
+				margin: 0.5rem 0 0.5rem 0!important;
+				height: 2rem;
+				text-align: right;
+				background: #fff!important;
+			}
+			
+			.bon-bar li {
+				display: inline-block;
+				padding-right: 0.5rem;
+				vertical-align: -webkit-baseline-middle;
+			}
+			
+			.bon-bar li a {
+				font-size: 0.6rem;
+				padding: 5px 20px 4px 20px;
+				border: 1px solid rgba(228, 228, 228, 1);
+				border-radius: 4px;
+				background: #fff;
+				color: #666666;
+			}
+			
+			.ddxq {
+				border: none!important;
+			}
+			
+			.ljfk {
+				color: #FFFFFF!important;
+				background: #00AAEE!important;
+			}
+			
+			.totmoney {
+				font-family: 'Arial Negreta', 'Arial';
+				font-weight: 700;
+				color: #FF0000;
+				font-size: 16px;
+			}
+			
+			.cpul {
+				background: #FFFFFF!important;
+				margin-bottom: 0;
+			}
+			
+			.cpul li {
+				padding: 15px 10px;
+				font-size: 0.6rem;
+				border-bottom: 1px solid #eee;
+			}
+			
+			.labletit {
+				font-size: 14px;
+				color: #999;
+			}
+			
+			.lablecon {
+				font-size: 14px;
+				color: #333;
+				padding-left: 0.3rem;
+			}
+			
+			.lableconte {
+				font-size: 14px;
+				color: #333;
+				padding-left: 0.9rem;
+			}
+			.f-nomargin{margin:0!important;}
+			.result{background: #fff;text-align: left;}
+			.result p{
+ margin: 0;font-size: 14px;color: #999;padding-left: 15px;padding-bottom: 4px
+}
+.result span{color:#333}
+.biaoti{background: #00aaee;color: #fff}
+.cofff{color: #fff}
+.vieworder{display: inline-block;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+    border-bottom: 1px solid#e4e4e4;
+    border-top: 1px solid#e4e4e4;
+    color: #00aaee}
