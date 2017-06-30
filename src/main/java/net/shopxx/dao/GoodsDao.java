@@ -284,4 +284,27 @@ public interface GoodsDao extends BaseDao<Goods, Long> {
 	 *
 	 */
 	GoodsCommonAgreement getCommonAgreement(long id);
+
+	/**
+	 * 查询交易商品列表
+	 */
+	List<TradeGoods> findTradeGoodsList(Boolean isEnable);
+
+	/**
+	 * 保存交易商品
+	 * @param TradeGoods
+	 */
+	void saveTradeGoods(TradeGoods TradeGoods);
+
+	/**
+	 * 查找交易商品
+	 * @param id
+	 */
+	TradeGoods findTradeGoodsById(Long id);
+
+	/**
+	 * 删除交易商品
+	 * @param id
+	 */
+	void deleteTradeGoods(Long id);
 }

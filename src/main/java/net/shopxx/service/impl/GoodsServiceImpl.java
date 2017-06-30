@@ -902,4 +902,24 @@ public class GoodsServiceImpl extends BaseServiceImpl<Goods, Long> implements Go
 		return goodsDao.getCommonAgreement(id);
 	}
 
+	@Override
+	public List<TradeGoods> findTradeGoodsList(Boolean isEnable) {
+		return goodsDao.findTradeGoodsList(isEnable);
+	}
+
+	@Override
+	public void saveTradeGoods(TradeGoods tradeGoods) {
+		goodsDao.saveTradeGoods(tradeGoods);
+	}
+
+	@Override
+	public TradeGoods findTradeGoodsById(Long id) {
+		return goodsDao.findTradeGoodsById(id);
+	}
+
+	@Override
+	public void deleteTradeGoods(Long id) {
+		goodsDao.deleteTradeGoods(id);
+	}
+
 }

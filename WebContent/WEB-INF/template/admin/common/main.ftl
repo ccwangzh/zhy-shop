@@ -103,7 +103,7 @@ $().ready(function() {
 								[#break /]
 							[/@shiro.hasPermission]
 						[/#list]
-						[#list ["admin:goods", "admin:stock", "admin:productCategory", "admin:parameter", "admin:attribute", "admin:specification", "admin:brand", "admin:productNotify"] as permission]
+						[#list ["admin:goods", "admin:stock", "admin:productCategory", "admin:parameter", "admin:attribute", "admin:specification", "admin:brand", "admin:productNotify:"] as permission]
 							[@shiro.hasPermission name = permission]
 								<li>
 									<a href="#product">${message("admin.main.productNav")}</a>
@@ -250,6 +250,11 @@ $().ready(function() {
 					[@shiro.hasPermission name="admin:goods"]
                         <dd>
                             <a href="../goods/commomAgreement.jhtml" target="iframe">${message("admin.main.commonAgreement")}</a>
+                        </dd>
+					[/@shiro.hasPermission]
+					[@shiro.hasPermission name="admin:goods"]
+                        <dd>
+                            <a href="../goods/listTradeGoods.jhtml" target="iframe">${message("admin.main.tradeGoods")}</a>
                         </dd>
 					[/@shiro.hasPermission]
 				</dl>

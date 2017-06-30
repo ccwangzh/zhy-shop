@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 import javax.persistence.NoResultException;
+import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Path;
@@ -570,4 +571,48 @@ public class GoodsDaoImpl extends BaseDaoImpl<Goods, Long> implements GoodsDao {
 		Assert.notNull(id);
 		return entityManager.find(GoodsCommonAgreement.class, id);
 	}
+
+	@Override
+	public List<TradeGoods> findTradeGoodsList(Boolean isEnable) {
+		CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+		CriteriaQuery<TradeGoods> criteriaQuery = criteriaBuilder.createQuery(TradeGoods.class);
+		Root<TradeGoods> root = criteriaQuery.from(TradeGoods.class);
+		criteriaQuery.select(root);
+		Predicate restrictions = criteriaBuilder.conjunction();
+		if (isEnable != null) {
+			restrictions = criteriaBuilder.and(restrictions, criteriaBuilder.equal(root.get("isEnable"), isEnable));
+		}
+		criteriaQuery.where(restrictions);
+		criteriaQuery.orderBy(criteriaBuilder.asc(root.get("order")));
+		return entityManager.createQuery(criteriaQuery).getResultList();
+	}
+
+	@Override
+	public void saveTradeGoods(TradeGoods tradeGoods) {
+		Assert.notNull(tradeGoods);
+		entityManager.persist(tradeGoods);
+	}
+
+	public TradeGoods findTradeGoodsById(Long id) {
+		if (id==null) {
+			return null;
+		}
+
+		String jpql = "select tradeGoods from TradeGoods tradeGoods where tradeGoods.id = :id";
+		try {
+			return entityManager.createQuery(jpql, TradeGoods.class).setParameter("id", id).getSingleResult();
+		} catch (NoResultException e) {
+			return null;
+		}
+	}
+
+	@Override
+	public void deleteTradeGoods(Long id) {
+		if (id==null) {
+			return;
+		}
+		String jpql = "delete from TradeGoods tradeGoods where tradeGoods.id = :id";
+		entityManager.createQuery(jpql).setParameter("id", id).executeUpdate();
+	}
+
 }

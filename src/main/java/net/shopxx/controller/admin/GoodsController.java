@@ -12,6 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 import java.net.URL;
 import java.util.List;
@@ -20,6 +21,8 @@ import java.util.Properties;
 import javax.annotation.Resource;
 
 import net.shopxx.entity.*;
+import net.shopxx.util.StringUtil;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
@@ -223,6 +226,94 @@ public class GoodsController extends BaseController {
         }
         goodsService.saveCommonAgreement(agreement);
         return SUCCESS_MESSAGE;
+    }
+
+	/**
+	 * 交易商品列表
+	 */
+	@RequestMapping(value = "/listTradeGoods", method = RequestMethod.GET)
+	public String listTradeGoods(ModelMap model) {
+		model.addAttribute("page", goodsService.findTradeGoodsList(null));
+		return "/admin/goods/listTradeGoods";
+	}
+
+    /**
+     * 添加交易商品
+     */
+    @RequestMapping(value = "/addTradeGoods", method = RequestMethod.GET)
+    public String addTradeGoods() {
+        return "/admin/goods/addTradeGoods";
+    }
+
+    /**
+     * 保存交易商品
+     */
+    @RequestMapping(value = "/saveTradeGoods", method = RequestMethod.POST)
+    public String saveTradeGoods(TradeGoods tradeGoods) {
+        if(StringUtil.isEmpty(tradeGoods.getName())){
+            return ERROR_VIEW;
+        }
+        if(tradeGoods.getOrder() == null){
+            return ERROR_VIEW;
+        }
+        if(tradeGoods.getIsEnable()==null){
+            tradeGoods.setIsEnable(false);
+        }
+        goodsService.saveTradeGoods(tradeGoods);
+        return "redirect:listTradeGoods.jhtml";
+    }
+
+    /**
+     * 编辑交易商品
+     */
+    @RequestMapping(value = "/editTradeGoods", method = RequestMethod.GET)
+    public String editTradeGoods(Long id,ModelMap model) {
+        if(id==null){
+            return ERROR_VIEW;
+        }
+        TradeGoods tradeGoods =goodsService.findTradeGoodsById(id);
+        model.addAttribute("tradeGoods", tradeGoods);
+        return "/admin/goods/editTradeGoods";
+    }
+
+    /**
+     * 删除交易商品
+     */
+    @RequestMapping(value = "/deleteTradeGoods", method = RequestMethod.POST)
+    public @ResponseBody Message deleteTradeGoods(Long id) {
+        if(id==null){
+            return ERROR_MESSAGE;
+        }
+        TradeGoods tradeGoods =goodsService.findTradeGoodsById(id);
+        if(tradeGoods==null){
+            return ERROR_MESSAGE;
+        }
+        goodsService.deleteTradeGoods(id);
+        return SUCCESS_MESSAGE;
+    }
+
+    /**
+     * 更新交易商品
+     */
+    @RequestMapping(value = "/updateTradeGoods", method = RequestMethod.POST)
+    public String updateTradeGoods(TradeGoods tradeGoods) {
+        if(tradeGoods.getIsEnable()==null){
+            tradeGoods.setIsEnable(false);
+        }
+        TradeGoods relationObj = goodsService.findTradeGoodsById(tradeGoods.getId());
+        try {
+            BeanUtils.copyProperties(relationObj,tradeGoods);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+        if(tradeGoods==null){
+            return ERROR_VIEW;
+        }
+        goodsService.saveTradeGoods(relationObj);
+
+        return "redirect:listTradeGoods.jhtml";
     }
 
 }
