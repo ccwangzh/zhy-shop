@@ -181,6 +181,7 @@
 				<entry key="store_product_category_children_list" value-ref="storeProductCategoryChildrenListDirective" />
 				<entry key="store_product_category_root_list" value-ref="storeProductCategoryRootListDirective" />
 				<entry key="promotion_plugin" value-ref="promotionPluginDirective" />
+				<entry key="tradeGoods_list" value-ref="tradeGoodsDirective" />
 			</map>
 		</property>
 	</bean>
