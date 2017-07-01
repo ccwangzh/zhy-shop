@@ -64,8 +64,11 @@ $().ready(function() {
 				<span>名称</span>
 			</th>
 			<th>
-				<span>${message("admin.common.order")}</span>
+				<span>图片预览</span>
 			</th>
+            <th>
+                <span>${message("admin.common.order")}</span>
+            </th>
             <th>
                 <span>是否启用</span>
             </th>
@@ -77,6 +80,13 @@ $().ready(function() {
 			<tr>
 				<td>
 					${tradeGoods.name}
+				</td>
+				<td>
+					[#if tradeGoods.image??]
+                        <span class="preview"><a href="${tradeGoods.image}" target="_blank"><img src="${tradeGoods.image}" width="28" height="28"/></a></span>
+					[#else]
+                        <span class="preview"></span>
+					[/#if]
 				</td>
 				<td>
 					${tradeGoods.order}
