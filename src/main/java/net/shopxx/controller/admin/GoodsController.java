@@ -233,7 +233,7 @@ public class GoodsController extends BaseController {
 	 */
 	@RequestMapping(value = "/listTradeGoods", method = RequestMethod.GET)
 	public String listTradeGoods(ModelMap model) {
-		model.addAttribute("page", goodsService.findTradeGoodsList(null));
+		model.addAttribute("page", goodsService.findTradeGoodsList(null,null));
 		return "/admin/goods/listTradeGoods";
 	}
 

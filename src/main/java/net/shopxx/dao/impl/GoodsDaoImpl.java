@@ -573,7 +573,7 @@ public class GoodsDaoImpl extends BaseDaoImpl<Goods, Long> implements GoodsDao {
 	}
 
 	@Override
-	public List<TradeGoods> findTradeGoodsList(Boolean isEnable) {
+	public List<TradeGoods> findTradeGoodsList(Boolean isEnable, Integer count) {
 		CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
 		CriteriaQuery<TradeGoods> criteriaQuery = criteriaBuilder.createQuery(TradeGoods.class);
 		Root<TradeGoods> root = criteriaQuery.from(TradeGoods.class);
@@ -584,7 +584,11 @@ public class GoodsDaoImpl extends BaseDaoImpl<Goods, Long> implements GoodsDao {
 		}
 		criteriaQuery.where(restrictions);
 		criteriaQuery.orderBy(criteriaBuilder.asc(root.get("order")));
-		return entityManager.createQuery(criteriaQuery).getResultList();
+		TypedQuery<TradeGoods> query = entityManager.createQuery(criteriaQuery);
+		if (count != null) {
+			query.setMaxResults(count);
+		}
+		return query.getResultList();
 	}
 
 	@Override

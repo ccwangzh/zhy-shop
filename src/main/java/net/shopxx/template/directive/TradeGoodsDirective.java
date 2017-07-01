@@ -49,8 +49,8 @@ public class TradeGoodsDirective extends BaseDirective {
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public void execute(Environment env, Map params, TemplateModel[] loopVars, TemplateDirectiveBody body) throws TemplateException, IOException {
-
-		List<TradeGoods> tradeGoodsList = goodsService.findTradeGoodsList(true);
+		Integer count = getCount(params);
+		List<TradeGoods> tradeGoodsList = goodsService.findTradeGoodsList(true,count);
 		setLocalVariable(VARIABLE_NAME, tradeGoodsList, env, body);
 	}
 

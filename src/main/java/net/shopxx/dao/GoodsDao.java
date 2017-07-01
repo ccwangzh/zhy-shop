@@ -288,7 +288,7 @@ public interface GoodsDao extends BaseDao<Goods, Long> {
 	/**
 	 * 查询交易商品列表
 	 */
-	List<TradeGoods> findTradeGoodsList(Boolean isEnable);
+	List<TradeGoods> findTradeGoodsList(Boolean isEnable, Integer count);
 
 	/**
 	 * 保存交易商品
