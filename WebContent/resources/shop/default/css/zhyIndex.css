@@ -626,3 +626,7 @@
 .index .hotGoods {
     height: 672px;
 }
+.index .hotGoods li img {
+    width: 400px;
+    height: 300px;
+}
