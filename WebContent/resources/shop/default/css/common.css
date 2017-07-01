@@ -79,7 +79,7 @@ a {
 }
 
 a:hover {
-	color: #00AAEE;
+	color: #ee7f00;
 	text-decoration: none;
 	outline: none;
 }
@@ -815,7 +815,7 @@ span.loadingBar {
 }
 
 .header .topNav li a:hover {
-	color: #00AAEE;
+	color: #ee7f00;
 }
 
 .header .topNav .right li a{
@@ -855,12 +855,12 @@ span.loadingBar {
 	color: #888888;
 	font-size: 14px;
 	outline: none;
-	border: 1px solid #00AAEE;
+	border: 1px solid #ee7f00;
 	border-right: 0px;
 }
 
 .header .search:hover .keyword {
-	border-color: #00AAEE;
+	border-color: #ee7f00;
 }
 
 .header .search button {
@@ -874,7 +874,7 @@ span.loadingBar {
 	cursor: pointer;
 	outline: none;
 	border: 0px;
-	background:#00AAEE;
+	background:#ee7f00;
 	font-size:16px;
 	color:#fff;
 }
@@ -972,7 +972,7 @@ span.loadingBar {
 }
 
 .headerCart .detail .summary em {
-	color: #00AAEE;
+	color: #ee7f00;
 }
 
 .headerCart .detail .summary a {
@@ -980,11 +980,11 @@ span.loadingBar {
 	float: right;
 	padding: 4px 10px;
     color: #ffffff;
-    background-color: #00AAEE;
+    background-color: #ee7f00;
 }
 
 .headerCart .detail .summary a:hover {
-    background-color: #00AAEE;
+    background-color: #ee7f00;
 }
 
 
@@ -993,7 +993,7 @@ span.loadingBar {
 	width:100%;
 	min-width:1190px;
 	height:40px;
-	background:#00AAEE;
+	background:#ee7f00;
 }
 
 .header .mainNav {
@@ -1010,7 +1010,7 @@ span.loadingBar {
 	line-height: 40px;
 	float: left;
 	padding-left: 40px;
-	background: url(../images/common.png) -270px -270px no-repeat #0094CC;
+	background: url(../images/common.png) -270px -270px no-repeat #ee7f00;
 }
 
 .header .mainNav dt a {
@@ -1030,7 +1030,7 @@ span.loadingBar {
 }
 .header .mainNav dd:hover {
 	color: #ffffff;
-	background-color: #00AAEE;
+	background-color: #ee7f00;
 }
 
 .header .mainNav dd a {
@@ -1043,7 +1043,7 @@ span.loadingBar {
 }
 
 .header .mainNav dd a:hover{
-	background:#0DBCFF;
+	background:#ff8a04;
 }
 
 .header .broadsideNav {
@@ -1079,7 +1079,7 @@ span.loadingBar {
 }
 
 .header .broadsideNav ul li:hover {
-	background-color: #00AAEE;
+	background-color: #ee7f00;
 }
 
 .header .broadsideNav ul {
@@ -1129,7 +1129,7 @@ span.loadingBar {
 	margin-left: -100px;
 	text-align: center;
 	line-height: 35px;
-	background-color: #00AAEE;
+	background-color: #ee7f00;
 	display: none;
 }
 
@@ -1286,7 +1286,7 @@ span.loadingBar {
 }
 
 .pagination a:hover {
-	border: 1px solid #00AAEE;
+	border: 1px solid #ee7f00;
 }
 
 .pagination a.previousPage {
@@ -1342,8 +1342,8 @@ span.loadingBar {
 	color: #ffffff;
 	font-weight: bold;
 	cursor: default;
-	border: 1px solid #00AAEE;
-	background-color: #00AAEE;
+	border: 1px solid #ee7f00;
+	background-color: #ee7f00;
 }
 
 .pagination .pageBreak {
@@ -1646,7 +1646,7 @@ span.loadingBar {
 }
 
 .shopMainColor{
-	color:#00AAEE;	
+	color:#ee7f00;	
 }
 
 .friendLink{
