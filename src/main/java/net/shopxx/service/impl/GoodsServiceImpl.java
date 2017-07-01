@@ -904,7 +904,7 @@ public class GoodsServiceImpl extends BaseServiceImpl<Goods, Long> implements Go
 
 	@Override
 	public List<TradeGoods> findTradeGoodsList(Boolean isEnable, Integer count) {
-		return goodsDao.findTradeGoodsList(isEnable);
+		return goodsDao.findTradeGoodsList(isEnable,count);
 	}
 
 	@Override
