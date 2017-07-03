@@ -27,7 +27,6 @@
 <script type="text/javascript" src="${base}/resources/shop/${theme}/jslides/jslides.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/common.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/effect.js"></script>
-<script type="text/javascript" src="${base}/resources/shop/${theme}/js/TouchSlide.1.1.js"></script>
 <style type="text/css">
 .header {
 	margin-bottom: 0px;
@@ -59,21 +58,6 @@ $().ready(function() {
 		skip_invisible: false
 	});
 	
-	var $firstPage=$(".hd-b .hd-nav a").eq(0);
-	var $lastTwoPage=$(".hd-b .hd-nav a").eq(5);
-	var $lastPage=$(".hd-b .hd-nav a").eq(6);
-	$firstPage.addClass("now");
-	$lastTwoPage.addClass("now");
-	$lastPage.addClass("now");
-	
-    TouchSlide({
-        slideCell: "#banplay",
-        titCell: ".nav ul",
-        mainCell: ".cont ul",
-        effect: "leftLoop",
-        autoPlay: true,
-        autoPage: true
-    });     
 });
 </script>
 </head>
