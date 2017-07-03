@@ -186,6 +186,8 @@ public class StaticServiceImpl implements StaticService, ServletContextAware {
 		generate(templateConfig.resolveTemplatePath(), templateConfig.resolveStaticPath(), null);
 		templateConfig = SystemUtils.getTemplateConfig("h5_index");
 		generate(templateConfig.resolveTemplatePath(), templateConfig.resolveStaticPath(), null);
+		templateConfig = SystemUtils.getTemplateConfig("tradeGoods");
+		generate(templateConfig.resolveTemplatePath(), templateConfig.resolveStaticPath(), null);
 	}
 
 	@Transactional(readOnly = true)
