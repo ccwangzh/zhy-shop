@@ -15,6 +15,7 @@
 	<templateConfig id="articleSearch" type="page" name="文章搜索" templatePath="/shop/${theme}/article/search.ftl" />
 	<templateConfig id="articleContent" type="page" name="文章内容" templatePath="/shop/${theme}/article/content.ftl" staticPath="/article/content/${article.createdDate?string('yyyyMM')}/${article.id}/${pageNumber}.html" />
 	<templateConfig id="goodsList" type="page" name="商品列表" templatePath="/shop/${theme}/goods/list.ftl" />
+	<templateConfig id="goodsList2" type="page" name="商品列表2" templatePath="/shop/${theme}/goods/list2.ftl" />
 	<templateConfig id="goodsSearch" type="page" name="商品搜索" templatePath="/shop/${theme}/goods/search.ftl" />
 	<templateConfig id="goodsContent" type="page" name="商品内容" templatePath="/shop/${theme}/goods/content.ftl" staticPath="/goods/content/${goods.createdDate?string('yyyyMM')}/${goods.id}.html" />
 	<templateConfig id="h5_goodsContent" type="page" name="商品内容" templatePath="/h5/${theme}/goods/content.ftl" staticPath="/h5/goods/content/${goods.createdDate?string('yyyyMM')}/${goods.id}.html" />

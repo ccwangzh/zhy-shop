@@ -176,8 +176,8 @@ public class GoodsController extends BaseController {
 	/**
 	 * 列表
 	 */
-	@RequestMapping(value = "/list/{productCategoryId}", method = RequestMethod.GET)
-	public String list(@PathVariable Long productCategoryId, Goods.Type type, Long brandId, Long promotionId, Long tagId, BigDecimal startPrice, BigDecimal endPrice, Goods.OrderType orderType, Integer pageNumber, Integer pageSize, HttpServletRequest request, ModelMap model) {
+	@RequestMapping(value = "/list{listIndex}/{productCategoryId}", method = RequestMethod.GET)
+	public String list(@PathVariable String listIndex,@PathVariable Long productCategoryId, Goods.Type type, Long brandId, Long promotionId, Long tagId, BigDecimal startPrice, BigDecimal endPrice, Goods.OrderType orderType, Integer pageNumber, Integer pageSize, HttpServletRequest request, ModelMap model) {
 		ProductCategory productCategory = productCategoryService.find(productCategoryId);
 		if (productCategory == null) {
 			throw new ResourceNotFoundException();
@@ -212,8 +212,9 @@ public class GoodsController extends BaseController {
 		model.addAttribute("pageNumber", pageNumber);
 		model.addAttribute("pageSize", pageSize);
 		model.addAttribute("page", goodsService.findPage(null, type, productCategory, brand, promotion, tag, attributeValueMap, startPrice, endPrice, true, Goods.Status.onTheshelf, true, null, null, null, null, orderType, pageable));
-		return "/shop/${theme}/goods/list";
+		return "/shop/${theme}/goods/list" + (listIndex==null ? "" : listIndex);
 	}
+
 
 	/**
 	 * 列表
