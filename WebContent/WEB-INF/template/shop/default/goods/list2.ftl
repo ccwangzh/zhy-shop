@@ -118,6 +118,8 @@ $().ready(function() {
 	var $hotProductCategoryBar=$("#hotProductCategory dt .bar");
 	var $buy=$(".buy");
 	
+	$goodsForm.attr("action","/shop/goods/list2/1.jhtml");
+	
 	[#if productCategory??]
 		$filter.each(function() {
 			var $this = $(this);
