@@ -119,7 +119,7 @@ $().ready(function() {
 	var $buy=$(".buy");
 	
 	var $goodsFormAction=$goodsForm.attr("action");
-	$goodsFormAction=$goodsFormAction.replace("list","list2");
+	$goodsFormAction=$goodsFormAction.replace("/list/","/list2/");
 	$goodsForm.attr("action",$goodsFormAction);
 	
 	[#if productCategory??]
