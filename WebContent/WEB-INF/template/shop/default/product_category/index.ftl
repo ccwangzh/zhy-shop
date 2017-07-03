@@ -10,11 +10,13 @@
 <link href="${base}/resources/shop/${theme}/css/common.css" rel="stylesheet" type="text/css" />
 <link href="${base}/resources/shop/${theme}/css/goods.css" rel="stylesheet" type="text/css" />
 <link href="${base}/resources/shop/${theme}/css/product_category.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyIndex.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyBase.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/jquery.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/common.js"></script>
 </head>
 <body>
-	[#include "/shop/${theme}/include/header.ftl" /]
+	[#include "/shop/${theme}/include/zhyHeader.ftl" /]
 	<div class="container productCategory">
 		<div class="row">
 			<div class="span2">

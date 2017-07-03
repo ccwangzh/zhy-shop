@@ -27,6 +27,8 @@
 [/#if]
 <link href="${base}/resources/shop/${theme}/css/common.css" rel="stylesheet" type="text/css" />
 <link href="${base}/resources/shop/${theme}/css/goods.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyIndex.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyBase.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/jquery.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/jquery.lazyload.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/common.js"></script>
@@ -519,7 +521,7 @@ $().ready(function() {
 </script>
 </head>
 <body>
-	[#include "/shop/${theme}/include/header.ftl" /]
+	[#include "/shop/${theme}/include/zhyHeader.ftl" /]
 	<div class="container goodsList">
 		<div id="compareBar" class="compareBar">
 			<form action="${base}/goods/compare.jhtml" method="get">
@@ -553,7 +555,7 @@ $().ready(function() {
 				[/#if]
 			</ul>
 		</div>
-		<div class="row">
+		<div class="row" style="padding:0;">
 			<div class="span2">
 				[#include "/shop/${theme}/include/hot_product_category.ftl" /]
 				[#include "/shop/${theme}/include/hot_brand.ftl" /]

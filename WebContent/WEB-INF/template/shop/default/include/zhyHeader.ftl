@@ -145,9 +145,9 @@ $().ready(function() {
 		});
    	 })
    	 
-   	var $firstPage=$(".hd-b .hd-nav a").eq(0);
-	var $lastTwoPage=$(".hd-b .hd-nav a").eq(5);
-	var $lastPage=$(".hd-b .hd-nav a").eq(6);
+   	var $firstPage=$(".hd-b .hd-nav a").eq(1);
+	var $lastTwoPage=$(".hd-b .hd-nav a").eq(6);
+	var $lastPage=$(".hd-b .hd-nav a").eq(7);
 	$firstPage.addClass("now");
 	$lastTwoPage.addClass("now");
 	$lastPage.addClass("now");
@@ -214,6 +214,9 @@ $().ready(function() {
 	
 	<div class="hd-b">		
 		<div class="hd-nav wrap">
+			<span style="float:left;">
+				<a style="padding:0 10px 0 10px;background: #ee7f00;color: #fff;" href="${base}/product_category.jhtml">${message("shop.header.allProductCategory")}</a>
+			</span>
 			[@navigation_list position = "middle"]
 				[#list navigations as navigation]
 					<span[#if navigation.url = url] class="current"[/#if]>

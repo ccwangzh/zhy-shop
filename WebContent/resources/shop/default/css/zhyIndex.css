@@ -547,7 +547,7 @@
 	font-size: 16px;
 }
 .con-5 .bd .box .fl{
-	width: 30%;
+	width: 24%;
 	margin-left: 5%;
 }
 .con-5 .bd .box .fl:first-child{
@@ -570,7 +570,7 @@
 }
 .con-5 .bd .box .c .txt{
 	line-height: 1.6;
-	height: 95px;
+	height: 45px;
 }
 .con-5 .bd .box .c .btn a{
 	height: 40px;

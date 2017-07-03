@@ -165,8 +165,8 @@ $().ready(function() {
 				[@tradeGoods_list count = 3]
 					[#list tradeGoodsList as tradeGoods]
 						<div class="box clearfix">
-							<div class="fl l"><a href=""><img src="${tradeGoods.image}"></a></div>
-							<div class="fl c">
+							<div class="fl l"><a href=""><img style="width:90%;height:90%;" src="${tradeGoods.image}"></a></div>
+							<div class="fl c" style="margin-left: 8%;">
 								<h3>${tradeGoods.name}</h3>
 								<h4>代码：${tradeGoods.code}</h4>
 								<div class="txt">
@@ -176,7 +176,7 @@ $().ready(function() {
 									<a href="">询价</a>
 								</div>
 							</div>
-							<ul class="fl r">
+							<ul class="fl r" style="margin-left: 8%;">
 								<li>最新价：${tradeGoods.price}</li>
 								<li>成交量：${tradeGoods.volume}</li>
 								<li>昨收盘：${tradeGoods.prePrice}</li>
