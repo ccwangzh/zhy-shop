@@ -118,7 +118,9 @@ $().ready(function() {
 	var $hotProductCategoryBar=$("#hotProductCategory dt .bar");
 	var $buy=$(".buy");
 	
-	$goodsForm.attr("action","/shop/goods/list2/1.jhtml");
+	var $goodsFormAction=$goodsForm.attr("action");
+	$goodsFormAction=$goodsFormAction.replace("list","list2");
+	$goodsForm.attr("action",$goodsFormAction);
 	
 	[#if productCategory??]
 		$filter.each(function() {
