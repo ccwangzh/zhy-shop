@@ -99,16 +99,4 @@
 	<setting name="smsKey" value="" />
 	<setting name="locale" value="zh_CN" />
 	<setting name="theme" value="default" />
-	<setting name="clearingUrl" value="http://121.40.168.238" />
-	<setting name="exchangeUrl" value="http://121.196.219.24" />
-	<setting name="exchangeId" value="9"/>
-	<setting name="smsUrl" value="https://seccf.51welink.com/submitdata/service.asmx/g_Submit"/>
-	<setting name="smsAccount" value="dlshzstz"/>
-	<setting name="smsPWD" value="R1hbgxt6"/>
-	<setting name="smsCode" value ="101288886"/>
-	<setting name="smsSign" value ="【上文众申】"/>
-	<setting name="maxTargetSend" value = "300"/>
-	<setting name="maxIpSend" value = "300"/>
-	
-	
 </shopxx>
