@@ -9,6 +9,8 @@
 <meta name="copyright" content="SHOP++" />
 <link href="${base}/resources/shop/${theme}/css/common.css" rel="stylesheet" type="text/css" />
 <link href="${base}/resources/shop/${theme}/css/order.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyIndex.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyBase.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/jquery.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/common.js"></script>
 <script type="text/javascript">
@@ -101,7 +103,7 @@ $().ready(function() {
 </head>
 <body>
 	<div id="dialogOverlay" class="dialogOverlay"></div>
-	[#include "/shop/${theme}/include/header.ftl" /]
+	[#include "/shop/${theme}/include/zhyHeader.ftl" /]
 	<div class="container payment">
 		<div class="row">
 			<div class="span12">

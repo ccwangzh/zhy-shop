@@ -214,9 +214,6 @@ $().ready(function() {
 	
 	<div class="hd-b">		
 		<div class="hd-nav wrap">
-			<span style="float:left;">
-				<a style="padding:0 10px 0 10px;background: #ee7f00;color: #fff;" href="${base}/product_category.jhtml">${message("shop.header.allProductCategory")}</a>
-			</span>
 			[@navigation_list position = "middle"]
 				[#list navigations as navigation]
 					<span[#if navigation.url = url] class="current"[/#if]>

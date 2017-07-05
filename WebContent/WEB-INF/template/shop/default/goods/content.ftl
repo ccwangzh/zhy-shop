@@ -22,6 +22,8 @@
 [/@seo]
 <link href="${base}/resources/shop/${theme}/css/common.css" rel="stylesheet" type="text/css" />
 <link href="${base}/resources/shop/${theme}/css/goods.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyIndex.css" rel="stylesheet" type="text/css" />
+<link href="${base}/resources/shop/${theme}/css/zhyBase.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/jquery.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/jquery.tools.js"></script>
 <script type="text/javascript" src="${base}/resources/shop/${theme}/js/jquery.jqzoom.js"></script>
@@ -590,7 +592,7 @@ $().ready(function() {
 </head>
 <body>
 	<div id="dialogOverlay" class="dialogOverlay"></div>
-	[#include "/shop/${theme}/include/header.ftl" /]
+	[#include "/shop/${theme}/include/zhyHeader.ftl" /]
 	[#assign productCategory = goods.productCategory /]
 	<div class="container goodsContent">
 		<div class="breadcrumb">
