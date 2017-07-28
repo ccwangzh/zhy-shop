@@ -889,14 +889,15 @@ $().ready(function() {
 									  <input id="weight" name="weight" value="" type="text" class="text w60" maxlength="9" title="${message("shop.business.goods.weightTitle")}">
 									</td>
 								</tr>
-								<tr>
+								[#--<tr>
 									<th>
 										${message("Product.rewardPoint")}:
 									</th>
 									<td>
 										<input type="text" id="rewardPoint" name="product.rewardPoint" class="text" maxlength="9" title="${message("shop.business.goods.rewardPointTitle")}"/>
 									</td>
-								</tr>
+								</tr>--]
+                                <input type="hidden" id="rewardPoint" name="product.rewardPoint" class="text" maxlength="9" value="0" />
 								<tr class="hidden">
 									<th>
 										<span class="requiredField">*</span>${message("Product.exchangePoint")}:

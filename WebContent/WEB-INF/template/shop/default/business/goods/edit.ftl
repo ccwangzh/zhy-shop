@@ -908,7 +908,7 @@ $().ready(function() {
 									<input type="text" name="weight" class="text" value="${goods.weight}" maxlength="9" title="${message("shop.business.goods.weightTitle")}"/>
 								</td>
 							</tr>
-							[#if goods.type == "general" || goods.type == "listedtrade"]
+							[#--[#if goods.type == "general" || goods.type == "listedtrade"]
 								<tr[#if goods.hasSpecification()] class="hidden"[/#if]>
 									<th>
 										${message("Product.rewardPoint")}:
@@ -917,7 +917,8 @@ $().ready(function() {
 										<input type="text" id="rewardPoint" name="product.rewardPoint" class="text" value="${goods.defaultProduct.rewardPoint}" maxlength="9" [#if goods.hasSpecification()] disabled="disabled"[/#if] title="${message("shop.business.goods.rewardPointTitle")}"/>
 									</td>
 								</tr>
-							[/#if]
+							[/#if]--]
+                            <input type="hidden" id="rewardPoint" name="product.rewardPoint" class="text" value="${goods.defaultProduct.rewardPoint}" maxlength="9" />
 							[#if goods.type == "exchange"]
 								<tr[#if goods.hasSpecification()] class="hidden"[/#if]>
 									<th>
