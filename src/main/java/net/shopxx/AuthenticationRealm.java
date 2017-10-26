@@ -58,9 +58,9 @@ public class AuthenticationRealm extends AuthorizingRealm {
 		String captchaId = authenticationToken.getCaptchaId();
 		String captcha = authenticationToken.getCaptcha();
 		String ip = authenticationToken.getHost();
-		if (!captchaService.isValid(Setting.CaptchaType.adminLogin, captchaId, captcha)) {
+		/*if (!captchaService.isValid(Setting.CaptchaType.adminLogin, captchaId, captcha)) {
 			throw new IncorrectCaptchaException();
-		}
+		}*/
 		if (username != null && password != null) {
 			Admin admin = adminService.findByUsername(username);
 			if (admin == null) {
