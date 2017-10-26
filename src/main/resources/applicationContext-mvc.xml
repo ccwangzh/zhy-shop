@@ -10,7 +10,7 @@
         <property name="locations">
             <list>
             	<value>classpath:config/config.properties</value>
-                <value>classpath:config/config-${TARGET_EXCHANGE:tcg}-${TARGET_ENV:dev}.properties</value>
+                <value>classpath:config/config-${TARGET_EXCHANGE:hrn}-${TARGET_ENV:dev}.properties</value>
             </list>
         </property>
     </bean>
