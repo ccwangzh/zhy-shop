@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 import org.springframework.web.context.ServletContextAware;
-
+/*
 import com.octo.captcha.CaptchaFactory;
 import com.octo.captcha.component.image.backgroundgenerator.BackgroundGenerator;
 import com.octo.captcha.component.image.backgroundgenerator.FileReaderRandomBackgroundGenerator;
@@ -29,7 +29,7 @@ import com.octo.captcha.component.image.wordtoimage.ComposedWordToImage;
 import com.octo.captcha.component.word.wordgenerator.RandomWordGenerator;
 import com.octo.captcha.engine.image.ImageCaptchaEngine;
 import com.octo.captcha.image.gimpy.GimpyFactory;
-
+*/
 /**
  * 验证码图片生成
  * 
@@ -37,7 +37,7 @@ import com.octo.captcha.image.gimpy.GimpyFactory;
  * @version 5.0
  */
 @Component("captchaEngine")
-public class CaptchaEngine extends ImageCaptchaEngine implements ServletContextAware, InitializingBean {
+public class CaptchaEngine /*extends ImageCaptchaEngine*/ implements ServletContextAware, InitializingBean {
 
 	/** ServletContext */
 	private ServletContext servletContext;
@@ -95,13 +95,14 @@ public class CaptchaEngine extends ImageCaptchaEngine implements ServletContextA
 		Assert.state(minWordLength > 0);
 		Assert.state(maxWordLength > 0);
 		Assert.hasText(charString);
-
+/*
 		Font[] fonts = new Font[] { new Font("Arial", Font.BOLD, maxFontSize), new Font("Bell", Font.BOLD, maxFontSize), new Font("Credit", Font.BOLD, maxFontSize), new Font("Impact", Font.BOLD, maxFontSize) };
 		FontGenerator fontGenerator = new RandomFontGenerator(minFontSize, maxFontSize, fonts);
 		BackgroundGenerator backgroundGenerator = StringUtils.isNotEmpty(backgroundImagePath) ? new FileReaderRandomBackgroundGenerator(imageWidth, imageHeight, servletContext.getRealPath(backgroundImagePath)) : new FunkyBackgroundGenerator(imageWidth, imageHeight);
 		TextPaster textPaster = new RandomTextPaster(minWordLength, maxWordLength, Color.WHITE);
 		CaptchaFactory[] captchaFactories = new CaptchaFactory[] { new GimpyFactory(new RandomWordGenerator(charString), new ComposedWordToImage(fontGenerator, backgroundGenerator, textPaster)) };
 		super.setFactories(captchaFactories);
+*/
 	}
 
 }

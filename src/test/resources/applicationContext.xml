@@ -33,7 +33,7 @@
     <jdbc:embedded-database id="dataSource" type="H2">
 		<jdbc:script location="classpath*:shopxx/db/data.sql" />
     </jdbc:embedded-database>
-
+<!--
     <bean id="log4jdbcInterceptor" class="net.sf.log4jdbc.DataSourceSpyInterceptor" />  
     <bean id="dataSourceLog4jdbcAutoProxyCreator" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">  
        <property name="interceptorNames">  
@@ -47,7 +47,7 @@
            </list>  
        </property>  
     </bean>
-
+-->
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="packagesToScan" value="net.shopxx.entity" />

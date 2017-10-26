@@ -29,7 +29,7 @@
                     <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss.SSS} [%-5p] [%t] [%c] - %m%n" />
             </layout>
     </appender>
-    
+<!--
     <appender name="asyncEmailer" class="org.apache.log4j.AsyncAppender" >
         <appender-ref ref="smtp" />
     </appender>
@@ -55,7 +55,7 @@
         </triggeringPolicy>
         <layout class="com.wenfex.common.log.HTMLLayout" />
     </appender>
-
+-->
     <!-- 需要记录日志的包 -->
     <logger name="jdbc.connection">
         <level value="warn" />

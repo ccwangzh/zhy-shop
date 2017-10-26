@@ -32,7 +32,9 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
 import com.google.common.base.Joiner;
 
+/*
 import cn.emay.sdk.client.api.Client;
+*/
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -387,6 +389,7 @@ public class SmsServiceImpl implements SmsService {
 		if (StringUtils.isEmpty(smsSn) || StringUtils.isEmpty(smsKey)) {
 			return -1L;
 		}
+/*
 		try {
 			Client client = new Client(smsSn, smsKey);
 			double result = client.getBalance();
@@ -395,6 +398,7 @@ public class SmsServiceImpl implements SmsService {
 			}
 		} catch (Exception e) {
 		}
+*/
 		return -1L;
 	}
 	

@@ -30,7 +30,9 @@ import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+/*
 import com.esotericsoftware.minlog.Log;
+*/
 import com.google.common.collect.Maps;
 
 import net.shopxx.Message;

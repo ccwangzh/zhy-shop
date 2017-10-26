@@ -38,7 +38,7 @@
 		<property name="acquireIncrement" value="${connection_pools.acquire_increment}" />
 		<property name="checkoutTimeout" value="${connection_pools.checkout_timeout}" />
 	</bean>
-
+<!--
     <bean id="log4jdbcInterceptor" class="net.sf.log4jdbc.DataSourceSpyInterceptor" />  
     <bean id="dataSourceLog4jdbcAutoProxyCreator" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">  
        <property name="interceptorNames">  
@@ -52,7 +52,7 @@
            </list>  
        </property>  
     </bean>
-
+-->
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="packagesToScan" value="net.shopxx.entity" />
@@ -199,12 +199,12 @@
 	</bean>
 
 	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.FixedLocaleResolver" />
-
+<!--
 	<bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
 		<property name="captchaEngine" ref="captchaEngine" />
 		<property name="minGuarantedStorageDelayInSeconds" value="600" />
 	</bean>
-
+-->
 	<bean id="remoteLicenseService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
 		<property name="serviceUrl" value="http://app.shopxx.net/remoting/licenseService" />
 		<property name="serviceInterface" value="net.shopxx.service.LicenseService" />
